@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  resources :favorites
   resources :movies
   resources :users
-  resources :favorites, only: [:new, :create, :destroy, :edit, :update]
+  resources :favorites
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
