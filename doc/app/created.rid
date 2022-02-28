@@ -1,0 +1,13 @@
+Mon, 28 Feb 2022 11:01:28 -0300
+README.rdoc	Fri, 25 Feb 2022 10:27:34 -0300
+app/controllers/application_controller.rb	Fri, 25 Feb 2022 10:27:34 -0300
+app/controllers/favorites_controller.rb	Mon, 28 Feb 2022 10:36:28 -0300
+app/controllers/movies_controller.rb	Fri, 25 Feb 2022 11:19:51 -0300
+app/controllers/users_controller.rb	Fri, 25 Feb 2022 11:18:35 -0300
+app/helpers/application_helper.rb	Fri, 25 Feb 2022 10:27:34 -0300
+app/helpers/favorites_helper.rb	Fri, 25 Feb 2022 11:20:19 -0300
+app/helpers/movies_helper.rb	Fri, 25 Feb 2022 11:19:51 -0300
+app/helpers/users_helper.rb	Fri, 25 Feb 2022 11:18:35 -0300
+app/models/favorite.rb	Mon, 28 Feb 2022 10:55:08 -0300
+app/models/movie.rb	Mon, 28 Feb 2022 09:51:38 -0300
+app/models/user.rb	Mon, 28 Feb 2022 09:51:49 -0300
