@@ -1,3 +1,39 @@
 <p id="notice"><%= notice %></p>
+<%= form_for(@favorite) do |f| %>
+  <% if @favorite.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@favorite.errors.count, "error") %> prohibited this favorite from being saved:</h2>
+      <ul>
+        <% @favorite.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="form-group">
+        <%= f.label "id:" %>
+        <%= @favorite.id %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="form-group">
+        <%= f.label "Nome do filme:" %>
+        <%= @favorite.movie.name %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="form-group">
+        <%= f.label "Email do usuário:" %>
+        <%= @favorite.user.email %>
+      </div>
+    </div>
+  </div>
+<% end %>
 <%= link_to 'Edit', edit_favorite_path(@favorite) %> |
 <%= link_to 'Back', favorites_path %>

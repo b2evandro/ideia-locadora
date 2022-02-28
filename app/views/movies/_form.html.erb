@@ -2,32 +2,46 @@
   <% if @movie.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
-
       <ul>
-      <% @movie.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% @movie.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :lengt %><br>
-    <%= f.number_field :lengt %>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="form-group">
+        <%= f.label :lengt %>
+        <%= f.text_field :lengt, class: "form-control" %>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :release_dt %><br>
-    <%= f.date_select :release_dt %>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="form-group">
+        <%= f.label :release_dt %>
+        <%= f.date_select :release_dt, class: "form-control" %>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :synopsis %><br>
-    <%= f.text_area :synopsis %>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="form-group">
+        <%= f.label :synopsis %>
+        <%= f.text_area :synopsis, class: "form-control" %>
+      </div>
+    </div>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class:" btn btn-primary btn-sm" %>
   </div>
 <% end %>
